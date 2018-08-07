@@ -1,0 +1,5 @@
+apiVersion: v1
+appVersion: "1.0"
+description: Example lamdba which implements redis client
+name: lambda-rc
+version: 0.0.1
