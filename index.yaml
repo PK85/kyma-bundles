@@ -1,0 +1,10 @@
+apiVersion: v1
+entries:
+  redis:
+    - name: redis
+      description: Redis service
+      version: 0.0.3
+  lambda-redis-client:
+    - name: lambda-redis-client
+      description: Lambda redis client
+      version: 0.0.1
