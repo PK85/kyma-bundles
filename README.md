@@ -38,4 +38,6 @@ Go to `/bundles` directory:
 - add new expanded bundle
 - update [index.yaml](/bundles/index.yaml)
 - create PR
+- when merged to master, watch https://github.com/PK85/kyma-bundles/commits/master Travis CI status of your commit
+- when pipeline is green, juts follow the [instructions](/deploy/README.md)
 
