@@ -15,17 +15,12 @@ and download these tools:
 To use bundles repository in your Helm Broker do:
 ```
 kubectl apply -f helm-config-map.yaml
-kubectl delete pod -n kyma-system -l app=core-helm-broker
-```
-
-Check if helm-broker pod is restarted:
-```
-kubectl get pod -n kyma-system -l app=core-helm-broker
 ```
 
 ## Synchronize Broker
 
-To synchronize broker with Service Catalog:
+Restart and synchronize broker with Service Catalog:
 ```
+kubectl delete pod -n kyma-system -l app=core-helm-broker;
 svcat sync broker core-helm-broker
 ```
