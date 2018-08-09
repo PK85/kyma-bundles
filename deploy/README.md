@@ -19,8 +19,17 @@ kubectl apply -f helm-config-map.yaml
 
 ## Synchronize Broker
 
-Restart and synchronize broker with Service Catalog:
+Restart broker pod:
 ```
-kubectl delete pod -n kyma-system -l app=core-helm-broker;
+kubectl delete pod -n kyma-system -l app=core-helm-broker
+```
+
+Check if broker pod is up and running
+```
+kubectl get pod -n kyma-system -l app=core-helm-broker
+```
+
+Sync with Service Catalog:
+```
 svcat sync broker core-helm-broker
 ```
