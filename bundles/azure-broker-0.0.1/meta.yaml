@@ -1,0 +1,13 @@
+name: azure-broker
+version: 0.0.1
+id: 4d949b93-0b28-4699-866d-f7dc7d0efc83
+description: "Azure Broker - when provisioned all Azure Broker service classes will be enabled in Service Catalog. Before provisioning provide a secret: core-azure-broker-credentials in a given namespace!"
+displayName: "lambda redis client"
+
+tags: azure, broker
+providerDisplayName: PK
+longDescription: "TBD"
+documentationURL: https://todo.com/
+supportURL: https://todo.com/
+imageURL: https://todo.com/
+bindable: false
