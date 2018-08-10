@@ -5,6 +5,20 @@ metadata:
   labels:
     example: service-binding
 spec:
+  checksum: ""
+  deployment:
+    metadata:
+      creationTimestamp: null
+    spec:
+      strategy: {}
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - name: ""
+            resources: {}
+    status: {}
   handler: app.handler
   runtime: nodejs8
   type: HTTP
