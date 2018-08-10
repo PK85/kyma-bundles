@@ -4,3 +4,11 @@ entries:
     - name: redis
       description: Redis service
       version: 0.0.3
+  lambda-rc:
+    - name: lambda-rc
+      description: Lambda redis client
+      version: 0.0.1
+  azure-broker:
+    - name: azure-broker
+      description: Activates Azure Broker
+      version: 0.0.1
