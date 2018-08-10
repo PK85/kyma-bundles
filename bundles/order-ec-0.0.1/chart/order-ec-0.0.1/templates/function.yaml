@@ -1,0 +1,59 @@
+apiVersion: kubeless.io/v1beta1
+kind: Function
+metadata:
+  name: order-ec
+  labels:
+    example: service-binding
+spec:
+  checksum: ""
+  deployment:
+    metadata:
+      creationTimestamp: null
+    spec:
+      strategy: {}
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - name: ""
+            resources: {}
+    status: {}
+  handler: app.handler
+  runtime: nodejs8
+  type: HTTP
+  deps: |
+    {
+        "name": "app",
+        "version": "0.0.1",
+        "dependencies": {
+          "request": "^2.85.0"
+        }
+    }
+  function: |
+    const request = require('request');
+    
+    module.exports = { main: function (event, context) {
+        console.log(event.data);
+        var orderId = event.data.orderCode;
+        var url = `${process.env.GATEWAY_URL}/electronics/orders/${orderId}`;
+        var namespace = 'production';
+        console.log(namespace)
+        console.log(url)
+        request.get({url: url, json: true}, function(error, response, body) {
+            if(error === null) {
+                console.log(body)
+                var order = {
+                    orderId: orderId,
+                    total: body.totalPriceWithTax.value,
+                    namespace : namespace
+                }
+                request.post({
+                    url: `${process.env.ORDER_SERVICE_URL}/orders`,
+                    json: order
+                })
+            } else {
+                console.log(error)
+            }
+        })
+    }}

@@ -1,0 +1,13 @@
+name: order-ec
+version: 0.0.1
+id: e9a296d9-c1d6-43b4-bfbc-33bb12b16eef
+description: "Showcase: Order Service. You could use in memory or SQL database. ServiceBinding gives you env variable: ORDER_SERVICE_URL"
+displayName: "Showcase: Order Service"
+
+tags: helm-broker, showcase, lambda
+providerDisplayName: PK
+longDescription: "Showcase: Order Service. You could use in memory or SQL database. ServiceBinding gives you env variable: ORDER_SERVICE_URL"
+documentationURL: https://todo.com/
+supportURL: https://todo.com/
+imageURL: https://todo.com/
+bindable: true

@@ -43,7 +43,7 @@ spec:
                       return `Error occurred while connecting to redis: ${err} \n`;
                   }
                   console.log(`This page was generated after talking to redis.\n\n` +
-                      `Redis info:\n  ${reply}\n`);
+                  return `${reply}\n`);
               });
           },
       };

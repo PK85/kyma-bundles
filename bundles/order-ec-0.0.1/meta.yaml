@@ -1,0 +1,13 @@
+name: order-ec
+version: 0.0.1
+id: 148f9f22-901d-4eb1-93c7-56b4e5aef8f9
+description: "Showcase: Ec lambda with orderCreated event and save in orderService. Inject orderService and have fun!"
+displayName: "Showcase: EC orderCreated"
+
+tags: helm-broker, showcase, order-service
+providerDisplayName: PK
+longDescription: "Showcase: Ec lambda with orderCreated event and save in orderService. Inject orderService and have fun!"
+documentationURL: https://todo.com/
+supportURL: https://todo.com/
+imageURL: https://todo.com/
+bindable: false

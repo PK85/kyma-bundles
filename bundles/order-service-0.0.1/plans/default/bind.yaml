@@ -1,0 +1,4 @@
+credential:
+  - name: ORDER_SERVICE_URL
+    value: http-db-service.{{ .Release.Namespace }}.svc.cluster.local
+
