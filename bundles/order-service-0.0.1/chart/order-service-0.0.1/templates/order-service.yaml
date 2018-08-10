@@ -37,5 +37,5 @@ spec:
         env:
         - name: dbtype
           # available dbtypes are: [memory, mssql]
-          value: "memory"
+          value: {{ .Values.dbtype }}
 
