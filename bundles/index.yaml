@@ -2,13 +2,21 @@ apiVersion: v1
 entries:
   redis:
     - name: redis
-      description: Redis service
+      description: "Redis service"
       version: 0.0.3
   lambda-rc:
     - name: lambda-rc
-      description: Lambda redis client
+      description: "Lambda redis client"
       version: 0.0.1
   azure-broker:
     - name: azure-broker
-      description: Activates Azure Broker
+      description: "Activates Azure Broker"
+      version: 0.0.1
+  order-ec:
+    - name: order-ec
+      description: "Showcase: Ec lambda with orderCreated event and save in orderService. Inject orderService and have fun!"
+      version: 0.0.1
+  order-service:
+    - name: order-service
+      description: "Showcase: Ec lambda with orderCreated event and save in orderService. Inject orderService and have fun!"
       version: 0.0.1
