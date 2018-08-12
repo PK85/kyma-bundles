@@ -1,4 +1,4 @@
-name: order-ec
+name: order-service
 version: 0.0.1
 id: e9a296d9-c1d6-43b4-bfbc-33bb12b16eef
 description: "Showcase: Order Service. You could use in memory or SQL database. ServiceBinding gives you env variable: ORDER_SERVICE_URL"
